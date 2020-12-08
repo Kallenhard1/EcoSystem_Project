@@ -1,15 +1,21 @@
 let ecoSystem;
-let ambient;
+let earth;
+let wather;
 let species;
 
 function setup() {
-  createCanvas(1920, 1080);
+  createCanvas(400, 400);
+  //pixelDensity(1);
   ecosystem = new EcoSystem();
-  ambient = new Ambient();
-  aspecies = new Species();
+  earth = new Earth();
+  wather = new Wather();
+  species = new Species();
   
 }
 
 function draw() {
-  background(220);
+  
+  
+  
+  earth.render();
 }
